@@ -1,7 +1,32 @@
 # RTSCodingChallenge
 Quick Repository for RTS Labs' Coding Challenge
 
-These solutions were developed using Scala, and tested using ScalaTest.
+These solutions were developed in Scala, tested using ScalaTest, and built using SBT.
+
+## Setup and Running
+### Cloning the repository
+Firstly, you will need to clone the repository. You can do this by running:
+
+`git clone https://github.com/NortonDJ/RTSCodingChallenge.git`
+
+### Running the solutions
+To run the solutions, you have to have installed SBT on your machine. 
+
+Please see https://www.scala-sbt.org/1.0/docs/Setup.html for more information on getting SBT set up.
+
+Once that has been taken care of you can navigate to the root directory. You can verify this by doing an `ls` (for Unix based) or `dir` (for Windows), and verifying that the **build.sbt** file is present in that directory.
+
+If you are interested in running the tests for each project, you can use:
+
+`sbt test`
+
+If you are interested in running the first problem, you can use:
+
+`sbt "runMain solutions.problem1.Problem1"`
+
+Similarly, for the second project you can use:
+
+`sbt "runMain solutions.problem2.Problem2"`
 
 ## Problem 1
 Print the number of integers in an array that are above the given input and the number that are below.
