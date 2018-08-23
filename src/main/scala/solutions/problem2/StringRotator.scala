@@ -15,16 +15,16 @@ object StringRotator {
   def rotate(input: String, shift: Int): String = {
     def magnitudeOfShift(str: String, shift: Int) = shift % str.length
 
+    def indexFromTheLeft(magnitude: Int) = {
+      Math.abs(magnitude)
+    }
+
     def indexFromTheRight(str: String, indexFromTheLeft: Int) =
       str.length - indexFromTheLeft
 
     def applyShift(str: String, index: Int) = {
       val (left, right) = str.splitAt(index)
       right.concat(left)
-    }
-
-    def indexFromTheLeft(magnitude: Int) = {
-      Math.abs(magnitude)
     }
 
     input match {

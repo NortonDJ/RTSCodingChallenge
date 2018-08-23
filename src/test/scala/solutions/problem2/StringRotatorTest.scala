@@ -8,6 +8,7 @@ class StringRotatorTest extends FunSuite {
     assert(StringRotator.rotate("MyString", 2) === "ngMyStri")
     assert(StringRotator.rotate("MyString", 0) === "MyString")
     assert(StringRotator.rotate("MyString", 8) === "MyString")
+    assert(StringRotator.rotate("MyString", 10) === "ngMyStri")
     assert(StringRotator.rotate("", 0) === "")
     assert(StringRotator.rotate("", 5) === "")
     assert(StringRotator.rotate(null, 5) === null)
