@@ -16,6 +16,10 @@ Please see https://www.scala-sbt.org/1.0/docs/Setup.html for more information on
 
 Once that has been taken care of you can navigate to the root directory. You can verify this by doing an `ls` (for Unix based) or `dir` (for Windows), and verifying that the **build.sbt** file is present in that directory.
 
+To start with a fresh copy and compile the project use:
+
+`sbt clean compile`
+
 If you are interested in running the tests for each project, you can use:
 
 `sbt test`
