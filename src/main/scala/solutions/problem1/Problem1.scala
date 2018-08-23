@@ -7,6 +7,11 @@ package solutions.problem1
   * e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”.
   */
 object Problem1 extends App {
-  val (above, below) = AboveBelowCounter.count(Array(1, 5, 2, 1, 10), 6)
+  private val input = Array(1, 5, 2, 1, 10)
+  private val inputString = input.mkString("[", ",", "]")
+  private val pivot = 6
+
+  println(s"Running Problem 1 for input: $inputString and pivot: $pivot")
+  val (above, below) = AboveBelowCounter.count(input, pivot)
   println(s"above: $above, below: $below")
 }
