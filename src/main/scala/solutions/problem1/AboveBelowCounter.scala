@@ -1,3 +1,5 @@
+package solutions.problem1
+
 object AboveBelowCounter {
 
   /**

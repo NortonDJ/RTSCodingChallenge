@@ -1,3 +1,5 @@
+package solutions.problem1
+
 /**
   * #1  Print the number of integers in an array that are above the given input
   * and the number that are below.

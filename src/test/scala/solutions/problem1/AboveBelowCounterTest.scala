@@ -1,3 +1,5 @@
+package solutions.problem1
+
 import org.scalatest.FunSuite
 
 class AboveBelowCounterTest extends FunSuite {
