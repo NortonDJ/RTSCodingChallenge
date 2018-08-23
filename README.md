@@ -58,8 +58,10 @@ By establishing the identity that a String being shifted by it's length is the s
 If you could change 1 thing about your favorite framework/language/platform (pick one), what would it be?
 
 ### My Response
-I would change Java to have a better interface for inserting multiple values into a collection. For example, when we want a list like:
-* [1, 2, 3]
+I would change Java to have a better interface for inserting multiple values into a collection. For example, when we want a list like 
+```java
+[1, 2, 3]
+```
 We can't simply do
 ```java
 List<Integer> list = [1, 2, 3];
