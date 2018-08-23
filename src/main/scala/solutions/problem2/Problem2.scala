@@ -12,9 +12,16 @@ package solutions.problem2
   * e.g. "MyString" rotated by -2 is "StringMy"
   */
 object Problem2 extends App {
-  val rotatedString = StringRotator.rotate("MyString", 2)
+  private val input = "MyString"
+  private var shiftAmount = 2
+
+  println(s"Running Problem 2 for input: $input by shifting $shiftAmount characters")
+
+  val rotatedString = StringRotator.rotate(input, shiftAmount)
   println(rotatedString)
 
-  val negativelyRotatedString = StringRotator.rotate("MyString", -2)
+  shiftAmount = -2;
+  println(s"Running Problem 2 for input: $input by shifting $shiftAmount characters")
+  val negativelyRotatedString = StringRotator.rotate(input, shiftAmount)
   println(negativelyRotatedString)
 }
