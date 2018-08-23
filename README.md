@@ -11,8 +11,10 @@ e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”
 ### My Solution
 I approach this problem with an O(n) solution by utilizing Scala's foldLeft method. 
 
-FoldLeft is a common method in functional programming languages which allows you to iterate through a List (or in this case, an Array) while keep an accumulator.
+FoldLeft is a common method in functional programming languages which allows you to iterate through a List (or in this case, an Array) while keeping an accumulator.
+
 An appropriate accumulator for this situation would be a 2-tuple of accumulators that represent the number of values that we have seen so far that were above the pivot, and the number of values that were below the pivot.
+
 In a similar fashion, we could have also brought along two Buffers in the accumulator tuple, and added elements to those Buffers and taken their length after processing was complete. However, it was not specified to report the elements, so this was not necessary.
 
 ## Problem 2
@@ -59,10 +61,13 @@ If you could change 1 thing about your favorite framework/language/platform (pic
 I would change Java to have a better interface for inserting multiple values into a collection. For example, when we want a list like:
 * [1, 2, 3]
 We can't simply do
-`List<Integer> list = [1, 2, 3]
-but we are instead forced to do something like
-`List<Integer> list = new LinkedList<>(Arrays.asList(1, 2, 3))
-
+```java
+List<Integer> list = [1, 2, 3];
+```
+instead, we are forced to do something like
+```java
+List<Integer> list = new LinkedList<>(Arrays.asList(1, 2, 3));
+```
 While this is a small issue, this is quite burdensome when writing tests and initializing constant Collections that you wish to query against (such as blacklists).
 
 On the other hand, Java has seen major improvements that bring in a lot of functional programming paradigms, such as Streams, and first class functions (those that can be passed as values). This has made Java a more readible language when it comes to filtering over collections, and iterating over for loops.
